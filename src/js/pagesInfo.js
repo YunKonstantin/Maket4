@@ -152,9 +152,9 @@ export function createPages() {
       <h2 class="slider_text prices_text">ЦЕНЫ НА УСЛУГИ</h2>
       <div class="slides_price-head">
 
-        <span class="slide_price_text-head">Ремонтные услуги</span>
-        <span class="slide_price_text-head">Цена</span>
-        <span class="slide_price_text-head">Срок</span>
+        <span class="slide_price_text-head item-1">Ремонтные услуги</span>
+        <span class="slide_price_text-head item-2">Цена</span>
+        <span class="slide_price_text-head item-3">Срок</span>
       </div>
       <div class="slider slider--prices swiper">
         <div class="slides swiper-wrapper" id="prices_swiper-wrapper">
