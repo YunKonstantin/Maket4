@@ -12,10 +12,8 @@ import Bosh from "../assets/image/Bosh.svg";
 import HP from "../assets/image/HP.svg";
 import Acer from "../assets/image/Acer.svg";
 import Sony from "../assets/image/Sony.svg";
-<<<<<<< HEAD
+
 import more from "../assets/image/more.svg";
-=======
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
 
 import PictureCopy from "../assets/image/Picture Copy.svg";
 import { InitSwiper2 } from "./swiper.js";
@@ -67,11 +65,9 @@ export function createPages() {
             К нам обращаются по рекомендациям и советуют нас родным и близким.
           </p>
         </div>
-<<<<<<< HEAD
+
         <div class="main__information-more text-active">
-=======
-        <div class="main__information-more">
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
+
           <img class="information-more__img" src="${expand}" />
           <p class="information-more__txt">Читать далее</p>
         </div>
@@ -86,20 +82,36 @@ export function createPages() {
       <h2 class="slider_text brands_text">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
       <div class="slider slider--brands swiper">
         <div id="slides--brands" class="slides slides--brands swiper-wrapper">
-          ${[Lenovo, Samsung, Apple, Viev, Bosh, HP, Acer, Sony, Bosh, HP, Acer, Sony].map(img => `
+          ${[
+            Lenovo,
+            Samsung,
+            Apple,
+            Viev,
+            Bosh,
+            HP,
+            Acer,
+            Sony,
+            Bosh,
+            HP,
+            Acer,
+            Sony,
+          ]
+            .map(
+              (img) => `
             <div id="slide--brands" class="slide swiper-slide">
               <img src="${img}" alt="brand" />
               <img src="${go}" alt="go" />
-            </div>`).join('')}
+            </div>`
+            )
+            .join("")}
         </div>
         <div class="swiper-pagination"></div>
-<<<<<<< HEAD
+
          <div class="show-more">
         <img class="show-more-img" src="${expand}" alt="expand" />
         <button class="show-more-btn">Показать все</button>
       </div>
-=======
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
+
       </div>
     </div>
 
@@ -108,20 +120,30 @@ export function createPages() {
       <h2 class="slider_text devices_text">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
       <div class="slider slider--devices swiper">
         <div class="slides slides--devices swiper-wrapper">
-          ${["Ремонт ноутбуков", "Ремонт планшетов", "Ремонт ПК", "Ремонт мониторов", "Ремонт ноутбуков", "Ремонт планшетов"].map(name => `
+          ${[
+            "Ремонт ноутбуков",
+            "Ремонт планшетов",
+            "Ремонт ПК",
+            "Ремонт мониторов",
+            "Ремонт ноутбуков",
+            "Ремонт планшетов",
+          ]
+            .map(
+              (name) => `
             <div id="slide--devices" class="slide slide--devices swiper-slide">
               <p class="slide_text">${name}</p>
               <img src="${go}" alt="go" />
-            </div>`).join('')}
+            </div>`
+            )
+            .join("")}
         </div>
         <div class="swiper-pagination"></div>
-<<<<<<< HEAD
+
          <div class="show-more-divices">
         <img class="show-more-img-divices" src="${expand}" alt="expand" />
         <button class="show-more-btn-divices">Показать все</button>
       </div>
-=======
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
+
       </div>
     </div>
 
@@ -129,27 +151,22 @@ export function createPages() {
     <div class="slider-wrapper">
       <h2 class="slider_text prices_text">ЦЕНЫ НА УСЛУГИ</h2>
       <div class="slides_price-head">
-<<<<<<< HEAD
+
         <span class="slide_price_text-head">Ремонтные услуги</span>
         <span class="slide_price_text-head">Цена</span>
         <span class="slide_price_text-head">Срок</span>
       </div>
       <div class="slider slider--prices swiper">
         <div class="slides swiper-wrapper ">
-=======
-        <span class="slide_price_text">Ремонтные услуги</span>
-        <span class="slide_price_text">Цена</span>
-        <span class="slide_price_text">Срок</span>
-      </div>
-      <div class="slider slider--prices swiper">
-        <div class="slides swiper-wrapper">
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
+
           ${[
             { title: "Тестирование", price: "Бесплатно", time: "30-120 мин" },
             { title: "Замена дисплея", price: "1000 ₽", time: "30-120 мин" },
             { title: "Замена динамика", price: "1000 ₽", time: "30-120 мин" },
             { title: "Замена ПО", price: "1000 ₽", time: "30-120 мин" },
-          ].map(item => `
+          ]
+            .map(
+              (item) => `
             <div id="price--devices" class="slide price--devices swiper-slide">
               <div class="slide_price__group">
                 <span class="slide_price_text">Ремонтные Услуги</span>
@@ -166,12 +183,14 @@ export function createPages() {
                 <button class="slide__button">
                   Заказать <img src="${arrow}" alt="arrow" />
                 </button>
-            </div>`).join('')}
+            </div>`
+            )
+            .join("")}
         </div>
         <div class="swiper-pagination"></div>
       </div>
     </div>
-<<<<<<< HEAD
+
     <div class="main_footer-information">
               <p class="main_information-text">
                 Все цены указаны с учетом НДС. Стоимость ремонта указана на
@@ -185,25 +204,22 @@ export function createPages() {
             </div>
           </div>
         </div>
-=======
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
+
   `;
 
   const observer = new MutationObserver((mutations, obs) => {
     const ready = [
       ".slider--brands",
       ".slider--devices",
-      ".slider--prices"
-    ].every(sel => document.querySelector(sel));
+      ".slider--prices",
+    ].every((sel) => document.querySelector(sel));
 
     if (ready) {
       InitSwiper2(".slider--brands");
       InitSwiper2(".slider--devices");
-<<<<<<< HEAD
+
       InitSwiper2(".slider--prices", 8, 8);
-=======
-      InitSwiper2(".slider--prices");
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
+
       obs.disconnect();
     }
   });

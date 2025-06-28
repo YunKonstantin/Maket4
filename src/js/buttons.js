@@ -4,14 +4,12 @@ export function initShowMore() {
   const slides = document.querySelectorAll(".slides .slide");
   const slide7 = document.querySelector(".slides .slide:nth-child(7)");
   const slide8 = document.querySelector(".slides .slide:nth-child(8)");
-<<<<<<< HEAD
+
   const slide9 = document.querySelector(".slides .slide:nth-child(9)");
   const slide10 = document.querySelector(".slides .slide:nth-child(10)");
   const slide11 = document.querySelector(".slides .slide:nth-child(11)");
   const slide12 = document.querySelector(".slides .slide:nth-child(12)");
 
-=======
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
   const extraSlides = document.querySelectorAll(".slide.extra.swiper-slide");
   let isExpanded = false;
 
@@ -72,5 +70,4 @@ export function initShowMore() {
 
   window.addEventListener("resize", updateSlidesVisibility);
   updateSlidesVisibility();
-
 }
