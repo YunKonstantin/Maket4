@@ -42,13 +42,6 @@
   padding-right: 16px;
 }
 .slides_price-head {
-<<<<<<< HEAD
-=======
-  display: none;
-}
-
-.slide.extra {
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
   display: none;
 }
 
@@ -153,11 +146,8 @@
   position: absolute;
   top: 16px;
   left: 16px;
-<<<<<<< HEAD
+
   color: #1b1c21;
-=======
-  color: #1B1C21;
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
 }
 .slide--devices img {
   position: absolute;
@@ -165,17 +155,10 @@
   right: 16px;
 }
 .slide_price_text {
-<<<<<<< HEAD
   color: #7e7e82;
 }
 .price_text {
   color: #1b1c21;
-=======
-  color: #7E7E82;
-}
-.price_text {
-  color: #1B1C21;
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
 }
 
 @media (max-width: 767px) {
@@ -197,7 +180,7 @@
     width: 240px;
     height: 200px;
   }
-<<<<<<< HEAD
+
   .show-more-divices {
     display: none;
   }
@@ -207,18 +190,13 @@
   .show-more-btn-divices {
     display: none;
   }
-=======
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
   .swiper-pagination {
-<<<<<<< HEAD
-=======
     display: none;
   }
   .slide.extra {
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
     display: none;
   }
   .slider::after {
@@ -227,7 +205,7 @@
   .slide {
     width: 224px !important;
   }
-<<<<<<< HEAD
+
   .slides--devices {
     display: grid;
     grid-template-columns: repeat(3, 240px);
@@ -260,8 +238,7 @@
   .show-more-img-divices.rotate {
     transform: rotate(180deg);
   }
-=======
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
+
   .show-more {
     display: flex;
     align-items: center;
@@ -291,15 +268,11 @@
     grid-template-rows: repeat(2, auto);
     gap: 16px 24px;
     justify-content: start;
-<<<<<<< HEAD
-=======
-    // box-sizing: border-box;
   }
 
   .slides .slide:nth-child(7),
   .slides .slide:nth-child(8) {
     display: none;
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
   }
   .slider {
     padding-left: 16px;
@@ -315,8 +288,6 @@
 }
 @media (min-width: 1440px) {
   .swiper-pagination {
-<<<<<<< HEAD
-=======
     display: none;
   }
   .slide:nth-child(7),
@@ -324,7 +295,6 @@
     display: flex;
   }
   .slide.extra {
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
     display: none;
   }
   .slides {
@@ -333,13 +303,11 @@
     grid-template-rows: repeat(2, 72px);
     gap: 16px 32px;
   }
-<<<<<<< HEAD
 
-=======
   .slides.slides--brands.swiper-wrapper {
     grid-template-columns: repeat(auto, 224px);
   }
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
+
   .slider {
     padding-left: 32px;
     padding-right: 32px;
@@ -367,7 +335,7 @@
   .show-more-img.rotate {
     transform: rotate(180deg);
   }
-<<<<<<< HEAD
+
   .slides--devices {
     display: grid;
     grid-template-columns: repeat(4, 240px);
@@ -400,6 +368,4 @@
   .show-more-img-divices.rotate {
     transform: rotate(180deg);
   }
-=======
->>>>>>> 989acf5c829d0dfe03e3a1c6ce0cee08db6fbaf5
 }

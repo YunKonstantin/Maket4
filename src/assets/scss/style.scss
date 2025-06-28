@@ -221,18 +221,14 @@ body {
   display: flex;
   padding: 0 16px 0 16px;
 }
-.main_footer-information {display: flex;
+.main_footer-information {
+  display: flex;
   flex-direction: column;
   gap: 16px;
   padding-left: 16px;
 }
-.main_information-text {
- 
-  
- 
-}
 .information__button {
-  font-family: 'TTLakes';
+  font-family: "TTLakes";
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -241,7 +237,6 @@ body {
   background: none;
   text-align: left;
   flex-wrap: wrap;
-  
 }
 
 @media (min-width: 768px) {
