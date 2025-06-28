@@ -160,6 +160,9 @@
 .price_text {
   color: #1b1c21;
 }
+.slide--devices {
+  width: 240px;
+}
 
 @media (max-width: 767px) {
   .slide {
@@ -202,9 +205,9 @@
   .slider::after {
     display: none;
   }
-  .slide {
-    width: 224px !important;
-  }
+  // .slide {
+  //width: 224px !important;
+  // }
 
   .slides--devices {
     display: grid;
@@ -214,7 +217,7 @@
   }
   .slide.slide--devices {
     height: 160px;
-    width: 240px;
+    width: 224px;
   }
 
   .show-more-divices {

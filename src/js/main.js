@@ -1,7 +1,7 @@
-import "../assets/scss/_swiper.scss";
-import "../assets/scss/swiperPrice.scss"
 import "../assets/scss/style.scss";
 import "../assets/scss/_burger.scss";
+import "../assets/scss/_swiper.scss";
+import "../assets/scss/swiperPrice.scss";
 import "../assets/scss/_fonts.scss";
 import "../assets/scss/_reset.scss";
 import "../assets/scss/footer.scss";

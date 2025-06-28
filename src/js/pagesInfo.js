@@ -157,7 +157,7 @@ export function createPages() {
         <span class="slide_price_text-head">Срок</span>
       </div>
       <div class="slider slider--prices swiper">
-        <div class="slides swiper-wrapper ">
+        <div class="slides swiper-wrapper" id="prices_swiper-wrapper">
 
           ${[
             { title: "Тестирование", price: "Бесплатно", time: "30-120 мин" },
@@ -168,19 +168,19 @@ export function createPages() {
             .map(
               (item) => `
             <div id="price--devices" class="slide price--devices swiper-slide">
-              <div class="slide_price__group">
+              <div class="slide_price__group item-1">
                 <span class="slide_price_text">Ремонтные Услуги</span>
-                <span class="price_text">${item.title}</span>
+                <span class="price_text ">${item.title}</span>
               </div>
-              <div class="slide_price__group">
+              <div class="slide_price__group  item-2">
                 <span class="slide_price_text">Цена</span>
                 <span class="price_text">${item.price}</span>
               </div>
-              <div class="slide_price__group">
+              <div class="slide_price__group  item-3">
                 <span class="slide_price_text">Срок</span>
-                <span class="price_text">${item.time}</span>
+                <span class="price_text ">${item.time}</span>
               </div>
-                <button class="slide__button">
+                <button class="slide__button item-4">
                   Заказать <img src="${arrow}" alt="arrow" />
                 </button>
             </div>`
