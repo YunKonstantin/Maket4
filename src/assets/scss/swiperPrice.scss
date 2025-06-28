@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+  .slides_price-head {
+    display: grid;
+    gap: 30px;
+    padding-left: 24px;
+  }
+  .slide_price_text {
+    display: none;
+  }
+  .slide.slide--devices {
+    width: 100%;
+  }
+.slider--prices.slides.swiper-wrapper{display: flex;
+flex-direction: column;}
+  #price--devices {
+    display: grid;
+    grid-template-columns: 348px minmax(24px, 1fr) 74px minmax(22px, 1fr) 81px minmax(
+        20px,
+        1fr
+      ) 119px;
+  }
+}
