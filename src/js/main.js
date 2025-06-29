@@ -28,7 +28,7 @@ root.appendChild(burger);
 root.appendChild(pages);
 root.appendChild(footer);
 
-initShowMore();
+initShowMore(".slider--brands");
 initBurgerMenu();
 InitNextMore();
 InitDevicesShowMore();
