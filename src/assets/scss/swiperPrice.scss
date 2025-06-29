@@ -2,7 +2,15 @@
   .slide_price_text {
     display: none;
   }
-  #price--devices,
+  #price--devices {
+    display: grid;
+    grid-template-columns:
+      348px minmax(24px, 1fr) 74px minmax(22px, 1fr) 81px minmax(20px, 1fr)
+      119px;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
   .slides_price-head {
     display: grid;
     grid-template-columns:
@@ -33,7 +41,7 @@
     right: auto;
     bottom: auto;
   }
-  .slides_price-head{
+  .slides_price-head {
     padding: 0 40px;
     font-size: 14px;
     color: rgba(126, 126, 130, 1);
