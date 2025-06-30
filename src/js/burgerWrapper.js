@@ -18,7 +18,7 @@ export function createBurgerWrapper() {
           <div class="burger-menu__top">
             <div class="burger-menu__left">
               <label for="menu-toggle" class="burger-menu__close">
-                <img src="${burgerClose}" alt="close" />
+                <img src="${burgerClose}" class="button_close" alt="close" />
               </label>
               <a href="#" class="burger-logo" data-page="main">
                 <img src="${Group}" alt="logo" />
@@ -104,8 +104,8 @@ export function createBurgerWrapper() {
         <div class="burger-menu__bottom">
           <div class="burger-menu__contacts">
             <div class="burger-menu__icons">
-              <img src="${call}" alt="call" />
-              <img src="${chat}" alt="chat" />
+              <img src="${call}" class="call_img" alt="call" />
+              <img src="${chat}" class="chat_img" alt="chat" />
               <img src="${profile}" alt="profile" />
             </div>
             <a class="burger-menu__mail" href="mailto:mail@cps.com"

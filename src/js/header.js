@@ -29,10 +29,10 @@ export function createHeader() {
         <div class="header__nav-right">
           <div class="contact-us">
             <button class="contact-us__call">
-              <img src="${call}" />
+              <img src="${call}" class="call_img" />
             </button>
             <button class="contact-us__chat">
-              <img src="${chat}" />
+              <img src="${chat}" class="chat_img" />
             </button>
             <button class="contact-us__profile">
               <img src="${profile}" />
