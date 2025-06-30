@@ -199,7 +199,7 @@ export function createPages() {
               </p>
               <button class="information__button">
                 Получить коммерческое  предложение
-                <img src="${more}" alt="" />
+                <img src="${more}" class="footer_button" alt="" />
               </button>
             </div>
           </div>
