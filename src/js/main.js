@@ -16,7 +16,7 @@ import { createFooter } from "./footer.js";
 import { InitNextMore } from "./buttonMoreTextMain.js";
 import { InitDevicesShowMore } from "./unitShowDevicesMore.js";
 import { createModalWindow } from "./modal.js";
-import { InitModalWindow } from "./modalOpen.js";
+
 
 const header = createHeader();
 const burger = createBurgerWrapper();
@@ -37,4 +37,4 @@ initShowMore(".slider--brands");
 initBurgerMenu();
 InitNextMore();
 InitDevicesShowMore();
-InitModalWindow();
+
