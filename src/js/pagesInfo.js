@@ -12,9 +12,7 @@ import Bosh from "../assets/image/Bosh.svg";
 import HP from "../assets/image/HP.svg";
 import Acer from "../assets/image/Acer.svg";
 import Sony from "../assets/image/Sony.svg";
-
 import more from "../assets/image/more.svg";
-
 import PictureCopy from "../assets/image/Picture Copy.svg";
 import { InitSwiper2 } from "./swiper.js";
 
@@ -225,5 +223,6 @@ export function createPages() {
   });
 
   observer.observe(document.body, { childList: true, subtree: true });
+
   return pages;
 }

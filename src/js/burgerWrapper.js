@@ -6,6 +6,7 @@ import call from '../assets/image/call.svg';
 import chat from '../assets/image/chat.svg';
 import profile from '../assets/image/profile.svg';
 import { initBurgerMenu } from './burgerButtonOpenClose.js';
+import { openModal } from './modalOpen.js';
 
 export function createBurgerWrapper() {
   const burger = document.createElement("div");
@@ -104,8 +105,12 @@ export function createBurgerWrapper() {
         <div class="burger-menu__bottom">
           <div class="burger-menu__contacts">
             <div class="burger-menu__icons">
+            <button class="btn-call__burger" data-attribute="call">
               <img src="${call}" class="call_img" alt="call" />
+            </button>
+             <button class="btn-chat__burger" data-attribute="chat">
               <img src="${chat}" class="chat_img" alt="chat" />
+             </button>
               <img src="${profile}" alt="profile" />
             </div>
             <a class="burger-menu__mail" href="mailto:mail@cps.com"
@@ -123,5 +128,12 @@ export function createBurgerWrapper() {
         </div>
       </div>`;
       initBurgerMenu();
+       setTimeout(() => {
+          const btnCallBurger = burger.querySelector(".btn-call__burger");
+          const btnChatBurger = burger.querySelector(".btn-chat__burger");
+
+          btnCallBurger?.addEventListener("click", () => openModal("call"));
+          btnChatBurger?.addEventListener("click", () => openModal("chat"));
+        }, 0);
       return burger;
 }

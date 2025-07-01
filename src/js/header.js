@@ -28,10 +28,10 @@ export function createHeader() {
         </div>
         <div class="header__nav-right">
           <div class="contact-us">
-            <button class="contact-us__call">
+            <button class="contact-us__call" data-attribute="call">
               <img src="${call}" class="call_img" />
             </button>
-            <button class="contact-us__chat">
+            <button class="contact-us__chat" data-attribute="chat">
               <img src="${chat}" class="chat_img" />
             </button>
             <button class="contact-us__profile">

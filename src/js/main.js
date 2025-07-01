@@ -16,6 +16,7 @@ import { createFooter } from "./footer.js";
 import { InitNextMore } from "./buttonMoreTextMain.js";
 import { InitDevicesShowMore } from "./unitShowDevicesMore.js";
 import { createModalWindow } from "./modal.js";
+import { openModal } from "./modalOpen.js";
 
 
 const header = createHeader();
@@ -32,6 +33,16 @@ root.appendChild(burger);
 root.appendChild(pages);
 root.appendChild(footer);
 root.appendChild(modal);
+
+const btnCall = document.querySelector(".contact-us__call");
+if (btnCall) {
+  btnCall.addEventListener("click", () => openModal("call"));
+}
+
+const btnChat = document.querySelector(".contact-us__chat");
+if (btnChat) {
+  btnChat.addEventListener("click", () => openModal("chat"));
+}
 
 initShowMore(".slider--brands");
 initBurgerMenu();
