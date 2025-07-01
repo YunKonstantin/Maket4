@@ -3,7 +3,7 @@ export function openModal(type) {
 
   const chatModal = document.querySelector('[data-modal="chat"]');
   const callModal = document.querySelector('[data-modal="call"]');
-  const closeBtn = document.getElementById("close");
+
   const overlay = document.querySelector(".overlay");
 
   overlay.classList.add("modal-open");
@@ -20,7 +20,6 @@ export function openModal(type) {
     callModal.classList.remove("hidden");
     chatModal.classList.remove("active");
     chatModal.classList.add("hidden");
- 
   }
 
   const closeBtns = document.querySelectorAll(".modal__close");

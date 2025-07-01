@@ -1,7 +1,7 @@
 export function createFooter() {
   const footer = document.createElement("footer");
   footer.className = "footer";
-  footer.innerHTML = `<div class="footer">
+  footer.innerHTML = `<div class="footer" id="footer-all">
           <div class="footer__text">
             <div class="footer__text--developer">
               <p class="text__year">© 2019 CPS</p>
