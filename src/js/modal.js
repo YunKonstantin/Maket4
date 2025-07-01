@@ -1,21 +1,19 @@
 import Group10 from "../assets/image/Group 10.svg";
 import BurgerClose from "../assets/image/burger__close.svg";
-import { modalOpen, openModal } from "./modalOpen.js";
-const btnChat = document.querySelector(".contact-us__chat");
-const btnCall = document.querySelector(".contact-us__call");
 
-btnChat.addEventListener('click', () => openModal('chat')); // ✅
-btnCall.addEventListener('click', () => openModal('call')); // ✅
 export function createModalWindow() {
   const modal = document.createElement("div");
   modal.className = "modal";
   modal.innerHTML = `<div class="modal-top">
-  <button class="modal__close" id="close">
-  <img src="${BurgerClose}" alt="Закрыть"/>
-  </button>
-  <div class="modal-window" id="modal-window_chat" data-atribute="chat">
+
+  <div class="modal-window" id="modal-window_chat" data-modal="chat">
   <main class="modal-window__main">
+  <div>
+    <button class="modal__close" id="close">
+      <img src="${BurgerClose}" alt="Закрыть"/>
+    </button>
     <h1 class="text modal-window__title">Обратная связь</h1>
+  </div>
     <div class="modal-window__container">
       <input class="modal-window__input" type="text" placeholder="Имя" />
       <input class="modal-window__input" type="tel" placeholder="Телефон" />
@@ -47,10 +45,16 @@ export function createModalWindow() {
 </div>
 <div
   class="container container__blur container__blur_modal"
-  id="overlay_modal-chat"
-></div><div class="modal-window" id="modal-window_call" data-atribute="call">
+  id="overlay_modal-chat">
+</div>
+<div class="modal-window" id="modal-window_call" data-modal="call">
   <main class="modal-window__main modal-window__main_order-call">
-    <h1 class="text modal-window__title">Заказать звонок</h1>
+   <div>
+    <button class="modal__close" id="close">
+      <img src="${BurgerClose}" alt="Закрыть"/>
+    </button>
+     <h1 class="text modal-window__title">Заказать звонок</h1>
+  </div>
     <div class="modal-window__container">
       <input class="modal-window__input" type="tel" placeholder="Телефон" />
       <p class="modal-window__text">
@@ -66,14 +70,20 @@ export function createModalWindow() {
     </div>
   </main>
   <button class="button button_send">
-    Отправить<img src="${Group10}" class="swiper-price__goside" />
+    <img src="${Group10}" class="swiper-price__goside" />
   </button>
 </div>
 <div
   class="container container__blur container__blur_modal"
-  id="overlay_modal-call"
+  id="overlay_modal-call">
+</div>
 `;
 
+
+
+
+// btnChat.addEventListener('click', () => openModal('chat')); // ✅
+// btnCall.addEventListener('click', () => openModal('call')); // ✅
 
   return modal;
 }
