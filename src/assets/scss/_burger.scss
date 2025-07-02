@@ -1,4 +1,4 @@
-@use './variables';
+@use "./variables";
 
 .burger-menu {
   position: fixed;
@@ -19,6 +19,9 @@
 
   transform: translateX(-100%);
   transition: transform 0.3s ease;
+}
+#menu-toggle:not(:checked) ~ .burger-menu {
+  box-shadow: none;
 }
 .menu-toggle {
   position: absolute;
@@ -153,7 +156,8 @@
   color: rgba(126, 126, 130, 1);
 }
 
-.btn-call__burger, .btn-chat__burger {
+.btn-call__burger,
+.btn-chat__burger {
   border: none;
   background-color: transparent;
 }
@@ -258,23 +262,24 @@
   }
 
   .overlay {
-  position: fixed;
-  inset: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: 998;
-  display: none;
-}
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 998;
+    display: none;
+  }
 
-#menu-toggle:checked ~ .overlay {
-  display: block;
-  opacity: 1;
-  z-index: 998;
-}
+  #menu-toggle:checked ~ .overlay {
+    display: block;
+    opacity: 1;
+    z-index: 998;
+  }
 
-#menu-toggle:checked ~ .overlay.modal-open, .overlay.modal-open {
-  display: block;
-  z-index: 1998;
-}
+  #menu-toggle:checked ~ .overlay.modal-open,
+  .overlay.modal-open {
+    display: block;
+    z-index: 1998;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -324,8 +329,8 @@
     gap: 28.3px;
   }
 }
-@media(min-width:360px){
-  .burger-menu__top{
+@media (min-width: 360px) {
+  .burger-menu__top {
     padding: 24px 16px 0 16px;
-  } 
+  }
 }

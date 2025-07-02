@@ -42,7 +42,6 @@
 }
 
 .modal-window__main {
-  padding-top: 40px;
   padding-bottom: 19px;
   display: flex;
   align-items: flex-start;
@@ -136,6 +135,14 @@
     border: none;
     background: transparent;
 }
+.button_send{
+  display: flex;
+  justify-content: flex-end;
+}
+#close{
+  padding-bottom: 40px;
+}
+
 
 @media (min-width: 768px) {
   .modal-window {
