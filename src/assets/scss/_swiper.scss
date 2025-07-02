@@ -300,7 +300,7 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: repeat(2, 72px);
-    gap: 16px 32px;
+    // gap: 16px 32px;
   }
 
   .slides.slides--brands.swiper-wrapper {

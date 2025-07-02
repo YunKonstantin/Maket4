@@ -1,4 +1,4 @@
-@use './variables';
+@use "./variables";
 
 .modal {
   position: fixed;
@@ -36,7 +36,6 @@
 }
 
 .modal-window.active {
-
   visibility: visible;
   transform: translateY(0);
 }
@@ -130,19 +129,19 @@
 .modal-window__text_pink {
   color: #ff3366;
 }
-.modal__close, .button_send{
-    // display: none;
-    border: none;
-    background: transparent;
+.modal__close,
+.button_send {
+  // display: none;
+  border: none;
+  background: transparent;
 }
-.button_send{
+.button_send {
   display: flex;
   justify-content: flex-end;
 }
-#close{
+#close {
   padding-bottom: 40px;
 }
-
 
 @media (min-width: 768px) {
   .modal-window {
