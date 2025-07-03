@@ -8,7 +8,7 @@ export function createModalWindow() {
 
   <div class="modal-window" id="modal-window_chat" data-modal="chat">
   <main class="modal-window__main">
-  <div>
+  <div class="modal_header">
     <button class="modal__close" id="close">
       <img src="${BurgerClose}" alt="Закрыть"/>
     </button>

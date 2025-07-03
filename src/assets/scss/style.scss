@@ -168,15 +168,18 @@ body {
 }
 .information__text {
   display: flex;
+  flex-direction: column;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
   color: #1b1c21;
+  gap: 8px;
 }
 
 .information__text-second {
   display: none;
+  padding: 0 16px 0 16px
 }
 .main__information-more {
   display: flex;

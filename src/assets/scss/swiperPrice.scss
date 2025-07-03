@@ -1,4 +1,4 @@
-@use './variables';
+@use "./variables";
 
 @media (min-width: 768px) {
   .slide_price_text {
@@ -12,6 +12,7 @@
     gap: 0;
     justify-content: center;
     align-items: center;
+    border-radius: 0 ;
   }
   .slides_price-head {
     display: grid;
@@ -21,6 +22,7 @@
     gap: 0;
     justify-content: center;
     align-items: center;
+    // border-radius: none;
   }
   #prices_swiper-wrapper {
     display: flex;
