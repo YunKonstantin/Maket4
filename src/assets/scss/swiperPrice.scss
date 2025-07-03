@@ -12,7 +12,8 @@
     gap: 0;
     justify-content: center;
     align-items: center;
-    border-radius: 0 ;
+    border-radius: 0;
+
   }
   .slides_price-head {
     display: grid;
@@ -27,6 +28,8 @@
   #prices_swiper-wrapper {
     display: flex;
     flex-direction: column;
+    border: 1px;
+    border-radius: 5px;
   }
   .item-1 {
     grid-column: 1;
