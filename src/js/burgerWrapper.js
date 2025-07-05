@@ -35,7 +35,7 @@ export function createBurgerWrapper() {
                   alt="highilight"
                   class="burger-menu__icon"
                 />
-                <a href="#" class="burger-menu__link" data-page="brands">
+                <a href="#" class="burger-menu__link" id="active_item" data-page="brands">
                   Ремонт техники
                 </a>
               </li>
