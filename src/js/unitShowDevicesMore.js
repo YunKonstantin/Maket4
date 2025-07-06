@@ -2,6 +2,7 @@ export function InitDevicesShowMore() {
   const button = document.querySelector(".show-more-btn-divices");
   const buttonImg = document.querySelector(".show-more-img-divices");
   const allSlides = document.querySelectorAll(".slide--devices");
+  const buttonContainer = button.parentElement;
 
   let expanded = false;
 
@@ -29,9 +30,11 @@ export function InitDevicesShowMore() {
     if (shouldRestrict) {
       button.textContent = expanded ? "Скрыть" : "Показать все";
       buttonImg.style.transform = expanded ? "rotate(180deg)" : "rotate(0deg)";
-      button.parentElement.style.display = "flex";
+      buttonContainer.style.display = "flex";
+      buttonContainer.style.marginTop = expanded ? "24px" : "";
     } else {
-      button.parentElement.style.display = "none";
+      buttonContainer.style.display = "none";
+      buttonContainer.style.marginTop = "";
     }
   }
 
